@@ -1,27 +1,39 @@
-# Environment variables
-.env
-
-# Python cache
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
 logs/
 
-# OS files
-.DS_Store
-Thumbs.db
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
 
-# IDE
-.vscode/
-.idea/
-
-# Trading data
-*.json
-*.csv
-
-# Backup files
-*.bak
-*~
+# Distribution
+dist/
+build/
+*.egg-info/
